@@ -35,8 +35,8 @@ public class admin_login extends AppCompatActivity {
         Log.d("Value", "is email " +inputEmail);
         Log.d("Value", "is password" +password);
 
-        if (inputEmail.equals("admin")){
-            if(password.equals("pass")){
+        if (inputEmail.equals("admin@gmail.com")){
+            if(password.equals("password")){
             startActivity(new Intent(getApplicationContext(),Admin_userReport.class));
             Toast.makeText(admin_login.this, "You have successfully logged in", Toast.LENGTH_SHORT).show();
         }}
